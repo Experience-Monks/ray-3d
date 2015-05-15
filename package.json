@@ -1,0 +1,48 @@
+{
+  "name": "ray-3d",
+  "version": "1.0.0",
+  "description": "a high-level picking ray helper for 3D intersection",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "gl-vec3": "^1.0.3",
+    "ray-plane-intersection": "^1.0.0",
+    "ray-sphere-intersection": "^1.0.0",
+    "ray-triangle-intersection": "^1.0.3"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "pick",
+    "picking",
+    "ray",
+    "camera",
+    "unproject",
+    "project",
+    "hit",
+    "test",
+    "collision",
+    "intersect",
+    "intersection",
+    "intersects",
+    "mouse",
+    "touch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/ray-3d.git"
+  },
+  "homepage": "https://github.com/Jam3/ray-3d",
+  "bugs": {
+    "url": "https://github.com/Jam3/ray-3d/issues"
+  }
+}
