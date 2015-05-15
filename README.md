@@ -51,7 +51,7 @@ Deep clones this ray into a new `Ray` instance.
 
 #### `ray.intersects....`
 
-All intersection methods return the collision point `[x, y, z]` if one occurred. The returned array is re-used to avoid GC thrashing. 
+All intersection methods return the collision point `[x, y, z]` if one occurred, which is re-used across calls to avoid GC thrashing. 
 
 If no collision occurred, the methods return `null`.
 
