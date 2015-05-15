@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-A high-level picking ray helper for 3D intersection, built from modular pieces.
+A high-level ray picking helper for 3D intersection, built from modular pieces.
 
 ```js
 var Ray = require('ray-3d')
@@ -49,7 +49,9 @@ Copies the `origin` and `direction` from the `otherRay` into this ray.
 
 Deep clones this ray into a new `Ray` instance.
 
-#### `ray.intersects....`
+---
+
+### intersections
 
 All intersection methods return the collision point `[x, y, z]` if one occurred, which is re-used across calls to avoid GC thrashing. 
 
