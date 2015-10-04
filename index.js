@@ -1,6 +1,7 @@
 var intersectRayTriangle = require('ray-triangle-intersection')
 var intersectRayPlane = require('ray-plane-intersection')
 var intersectRaySphere = require('ray-sphere-intersection')
+var intersectRayBox = require('ray-aabb-intersection')
 var copy3 = require('gl-vec3/copy')
 
 var tmpTriangle = [
@@ -43,6 +44,10 @@ Ray.prototype.intersectsPlane = function (normal, distance) {
 
 Ray.prototype.intersectsTriangle = function (triangle) {
   return intersectRayTriangle(tmp3, this.origin, this.direction, triangle)
+}
+
+Ray.prototype.intersectsBox = function (aabb) {
+  return intersectRayBox(tmp3, this.origin, this.direction, aabb)
 }
 
 Ray.prototype.intersectsTriangleCell = function (cell, positions) {

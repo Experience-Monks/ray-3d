@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "gl-vec3": "^1.0.3",
+    "ray-aabb-intersection": "^1.0.1",
     "ray-plane-intersection": "^1.0.0",
     "ray-sphere-intersection": "^1.0.0",
     "ray-triangle-intersection": "^1.0.3"
