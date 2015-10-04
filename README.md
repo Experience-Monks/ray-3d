@@ -25,7 +25,6 @@ The API is still experimental, and missing some features:
 
 - `ray-ray-intersection`
 - `ray-mesh-intersection` (simplicial complex)
-- `ray-box-intersection`
 
 ## Usage
 
@@ -89,6 +88,14 @@ Where `[ a, b, c ]` are indices into the `positions` array:
 
 This is useful for indexed meshes and simplicial complexes like [icosphere](https://www.npmjs.com/package/icosphere).
 
+#### `ray.intersectsBox(aabb)`
+
+Whether this ray intersects with the [Axis-Aligned Bounding Box](http://www.gamasutra.com/view/feature/131833/when_two_hearts_collide_.php) `aabb`:
+
+```
+[ [x1, y1, z1], [x2, y2, z2] ]
+```
+
 ## See Also
 
 - [camera-unproject](https://www.npmjs.com/package/camera-unproject)
@@ -97,6 +104,7 @@ This is useful for indexed meshes and simplicial complexes like [icosphere](http
 - [ray-sphere-intersection](https://www.npmjs.com/package/ray-sphere-intersection)
 - [ray-plane-intersection](https://www.npmjs.com/package/ray-plane-intersection)
 - [ray-triangle-intersection](https://www.npmjs.com/package/ray-triangle-intersection)
+- [ray-aabb-intersection](https://www.npmjs.com/package/ray-aabb-intersection)
 
 ## License
 
