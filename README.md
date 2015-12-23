@@ -20,6 +20,7 @@ Features:
 - `intersectsPlane`
 - `intersectsTriangle`
 - `intersectsTriangleCell`
+- `intersectsAABB` (Axis-Aligned Bounding Box)
 
 The API is still experimental, and missing some features:
 
